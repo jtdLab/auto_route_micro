@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:my_package/routes.gr.dart';
 
 import 'router.gr.dart';
 

@@ -12,9 +12,6 @@ import 'package:auto_route/auto_route.dart' as _i1;
 import 'package:my_package/routes.gr.dart' as _i2;
 import 'package:root_package/cool_page.dart' as _i3;
 
-// export micro package page infos
-export 'package:my_package/routes.gr.dart' hide MyPackageMicroRoutes;
-
 abstract class $Router extends _i1.RootStackRouter {
   $Router({super.navigatorKey});
 
