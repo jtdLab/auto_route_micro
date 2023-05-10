@@ -1,0 +1,28 @@
+name: auto_route_micro
+
+packages:
+  - packages/**
+
+command:
+  bootstrap:
+    # https://github.com/dart-lang/pub/issues/3404)
+    runPubGetInParallel: false
+
+ide:
+  intellij: false
+
+scripts:
+  analyze:
+    run: flutter analyze
+    description: Analyze all packages.
+
+  format:
+    run: dart format . --fix
+    description: Format all packages.
+
+  gen-code:
+    exec: flutter pub run build_runner build --delete-conflicting-outputs
+    description: Run code generation in a package.
+    packageFilters:
+      dependsOn:
+        - build_runner
