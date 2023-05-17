@@ -11,7 +11,8 @@
 import 'package:auto_route/auto_route.dart' as _i2;
 import 'package:my_package/some_page.dart' as _i1;
 
-class $MyPackageMicroRoutes {
+abstract class $MyPackageModule extends _i2.AutoRouterModule {
+  @override
   final Map<String, _i2.PageFactory> pagesMap = {
     SomeRoute.name: (routeData) {
       return _i2.AutoRoutePage<dynamic>(

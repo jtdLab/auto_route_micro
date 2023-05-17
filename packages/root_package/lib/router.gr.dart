@@ -23,7 +23,7 @@ abstract class $Router extends _i2.RootStackRouter {
         child: const _i1.CoolPage(),
       );
     },
-    ..._i3.MyPackageMicroRoutes().pagesMap,
+    ..._i3.MyPackageModule().pagesMap,
   };
 }
 

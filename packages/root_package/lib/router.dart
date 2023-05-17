@@ -1,12 +1,12 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:my_package/routes.dart';
-import 'package:my_package/routes.gr.dart';
+import 'package:my_package/routes.module.dart';
 
 import 'router.gr.dart';
 
 @AutoRouterConfig(
-  microRoutes: [
-    MyPackageMicroRoutes,
+  modules: [
+    MyPackageModule,
   ],
 )
 class Router extends $Router {
